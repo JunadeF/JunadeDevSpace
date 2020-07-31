@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuScreen">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:text="back"
+        android:id="@+id/back"
+        android:layout_margin="20dp"
+        android:textColor="#000" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Total of two numbers squared"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Welcome to my code space"
+        android:textSize="20sp"
+        android:textColor="#000"
+
+        android:layout_margin="15dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:layout_gravity="center"
+                android:hint="Enter first number"
+                android:padding="10dp"
+                android:id="@+id/first"
+                android:inputType="number"
+                android:layout_margin="20dp"
+                android:textColor="#000"
+                android:layout_weight="1"/>
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:layout_gravity="center"
+                android:hint="Enter second number"
+                android:padding="10dp"
+                android:id="@+id/second"
+                android:inputType="number"
+                android:layout_margin="20dp"
+                android:textColor="#000"
+                android:layout_weight="1"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:text="Calculate"
+                android:id="@+id/cal"
+                android:layout_margin="20dp"
+                android:textColor="#000"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:gravity="center"
+                android:id="@+id/result"
+                android:layout_margin="30dp"
+                android:textColor="#000"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
